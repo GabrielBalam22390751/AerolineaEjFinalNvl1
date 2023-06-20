@@ -68,7 +68,7 @@ public class ControlMain {
                 break;
         }
         //comparativa
-        if(selecavpar > selecionpilen && selecavlleg < selecionpilsal) {
+        if(selecavpar >= selecionpilen && selecavlleg <= selecionpilsal) {
             System.out.println("El piloto seleccionado si puede pilotar este avión");
         }
         else{
