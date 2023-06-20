@@ -40,10 +40,12 @@ public class ControlMain {
                 System.out.println("Ha seleccionado el avión No 1 ");
                 selecavpar = avion1.partida;
                 selecavlleg = avion1.llegada;
+                break;
             case 2:
                 System.out.println("Ha seleccionado el avión No 2");
                 selecavpar = avion2.partida;
                 selecavlleg = avion2.llegada;
+                break;
         }
 
         //Selección de piloto
@@ -58,17 +60,19 @@ public class ControlMain {
                 System.out.println("Ha seleccionado el piloto No 1");
                 selecionpilen = piloto1.horarioentrada;
                 selecionpilsal = piloto1.horariosalida;
+                break;
             case 2:
                 System.out.println("Ha seleccionado el piloto No 2");
                 selecionpilen = piloto2.horarioentrada;
                 selecionpilsal = piloto2.horariosalida;
+                break;
         }
         //comparativa
-        if(selecavpar > selecionpilen && selecavlleg > selecionpilsal) {
-            System.out.println("El piloto seleccionado no puede pilotar este avión");
+        if(selecavpar > selecionpilen && selecavlleg < selecionpilsal) {
+            System.out.println("El piloto seleccionado si puede pilotar este avión");
         }
         else{
-            System.out.println("El piloto si puede pilotar este avión");
+            System.out.println("El piloto no puede pilotar este avión");
         }
 
         }
